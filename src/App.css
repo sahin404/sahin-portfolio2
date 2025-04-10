@@ -1,0 +1,12 @@
+.content {
+  width: 1024px; /* Fixed width */
+  margin: 0px auto;
+  padding: 0 10px;
+}
+
+@media (max-width: 1050px) {
+  .content {
+    width: 95%; /* Fixed width for larger screens */
+    /* margin: 20px auto; */
+  }
+}

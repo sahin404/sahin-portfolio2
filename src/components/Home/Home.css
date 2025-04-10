@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+.Home {
+    font-family: 'Inclusive Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* padding: 40px; */
+    /* max-width: 1200px; */
+    margin: 100px 0;
+    /* min-height: 80vh; */
+  }
+    
+  .full-name {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .my-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: #023CB6;
+    margin: 10px 0;
+  }
+  
+  .article {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    /* color: #666; */
+    line-height: 1.5rem;
+  }
+  
+  .codingimage {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .codingimage img {
+    max-width: 90%;
+    /* height: auto; */
+    /* border-radius: 10px; */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1023px) {
+  
+    .codingimage {
+      display: none;
+    }
+  }
+  

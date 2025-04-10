@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+a {
+  text-decoration: none;  /* Removes underline */
+  color: inherit;         /* Inherit the color from the parent (so it won't be blue) */
+}
+
+.Navbar {
+  margin-top: 20px;
+  font-family: 'Inclusive Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 15px 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: #023CB6;
+  text-transform: uppercase;
+}
+
+.contact {
+  display: flex;
+  gap: 15px;
+}
+
+.contact .linkedin,
+.contact .github {
+  font-size: 1.125rem;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.contact .linkedin:hover {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+.contact .github:hover {
+  color: #171515; /* GitHub Black */
+}
+
+/* Responsive Design */
+@media (max-width: 765px) {
+  .Navbar {
+    padding: 15px 0px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .contact .linkedin,
+  .contact .github {
+    font-size: 1.2rem;
+  }
+}
