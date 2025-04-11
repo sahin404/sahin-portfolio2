@@ -104,6 +104,31 @@ const skillsData = {
       )
     }
   ],
+  Database: [
+    {
+      id: 1,
+      icon: (
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"          
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      ),
+
+    },
+    {
+      id: 2,
+      icon: (      
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
+        alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      )
+    }
+  ],
   Others: [
     {
       id: 1,
