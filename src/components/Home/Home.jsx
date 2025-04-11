@@ -1,5 +1,6 @@
 import codingImage from '../../assets/coding.webp';
 import './Home.css'
+import CV from '../../assets/CV.pdf'
 function Home() {
   return (
     <div className='Home'>
@@ -8,8 +9,10 @@ function Home() {
         <div className="my-title">MERN Stack Developer</div>
         <div className="article">I design and develop scalable and high-performance digital solutions to meet the needs of modern businesses.</div>
         <button className="glow-button mt-6">
-          Download CV
-          <span className="sparkle-circle"></span>
+          <a href={CV} target="_blank" className="preview-link">
+            Download CV
+            <span className="sparkle-circle"></span>
+          </a>
         </button>
       </div>
       <div className="codingimage">
