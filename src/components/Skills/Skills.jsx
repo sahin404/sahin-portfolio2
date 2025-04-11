@@ -9,8 +9,8 @@ const skillsData = {
       id: 1,
       icon: (
         <img
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
-        
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+
           alt="JavaScript Logo"
           width="50"
           height="50"
@@ -20,7 +20,7 @@ const skillsData = {
     },
     {
       id: 2,
-      icon: (      
+      icon: (
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
           alt="JavaScript Logo"
           width="50"
@@ -44,8 +44,8 @@ const skillsData = {
     {
       id: 4,
       icon: (
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" 
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
           alt="JavaScript Logo"
           width="50"
           height="50"
@@ -56,9 +56,9 @@ const skillsData = {
     {
       id: 5,
       icon: (
-        
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"  
+
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
           alt="JavaScript Logo"
           width="50"
           height="50"
@@ -71,45 +71,39 @@ const skillsData = {
     {
       id: 1,
       icon: (
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"         
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+          alt="Node.js Logo"
+          width="50"
+          height="50"
+        />
+
+      ),
+
+    },
+
+    {
+      id: 2,
+      icon: (
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
           alt="JavaScript Logo"
           width="50"
           height="50"
         />
+
       ),
 
     },
-    {
-      id: 2,
-      icon: (      
 
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
-        alt="JavaScript Logo"
-          width="50"
-          height="50"
-        />
-      ),
 
-    },
-    {
-      id: 3,
-      icon: (      
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg" 
-        alt="JavaScript Logo"
-          width="50"
-          height="50"
-        />
-      )
-    }
   ],
   Database: [
     {
       id: 1,
       icon: (
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"          
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
           alt="JavaScript Logo"
           width="50"
           height="50"
@@ -119,22 +113,35 @@ const skillsData = {
     },
     {
       id: 2,
-      icon: (      
+      icon: (
 
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-        alt="JavaScript Logo"
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg"
+          alt="JavaScript Logo"
           width="50"
           height="50"
         />
       )
+    },
+    {
+      id: 3,
+      icon: (
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
+          alt="PostgreSQL Logo"
+          width="50"
+          height="50"
+        />
+
+      )
     }
   ],
   Others: [
+
     {
       id: 1,
       icon: (
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"          
+
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
           alt="JavaScript Logo"
           width="50"
           height="50"
@@ -144,10 +151,21 @@ const skillsData = {
     },
     {
       id: 2,
-      icon: (      
+      icon: (
 
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" 
-        alt="JavaScript Logo"
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+          alt="JavaScript Logo"
+          width="50"
+          height="50"
+        />
+      )
+    },
+    {
+      id: 3,
+      icon: (
+
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920256.png"
+          alt="Camera Logo"
           width="50"
           height="50"
         />
@@ -198,8 +216,8 @@ function Skills() {
         ) : (
           <p className="no-skills">No skills available in this category.</p>
         )}
-        
-          
+
+
       </div>
     </div>
   );
