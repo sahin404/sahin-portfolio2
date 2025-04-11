@@ -14,13 +14,13 @@
     font-size: 3rem;
     line-height: 1;
     font-weight: 500;
-    color: #333;
+    color: #A9B1D6;
   }
   
   .my-title {
     font-size: 1.875rem;
     line-height: 2.25rem;
-    color: #023CB6;
+    color: #E22FE4;
     margin: 10px 0;
   }
   
@@ -28,6 +28,7 @@
     font-family: "Quicksand", sans-serif;
     font-size: 1rem;
     /* color: #666; */
+    color: #A9B1D6;
     line-height: 1.5rem;
   }
   
@@ -41,6 +42,51 @@
     /* height: auto; */
     /* border-radius: 10px; */
   }
+  .glow-button {
+    position: relative;
+    background-color: #E22FCE;
+    color: white;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 6px #E22FCE, 0 0 12px #E22FCE;
+    transition: all 0.3s ease;
+  }
+  
+  .glow-button:hover {
+    box-shadow: 0 0 10px #E22FCE, 0 0 20px #E22FCE, 0 0 30px #E22FCE;
+  }
+  
+  .sparkle-circle {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #E22FCE 0%, transparent 75%);
+    opacity: 0.2; /* reduced sparkle visibility */
+    z-index: -1;
+    animation: spin 6s linear infinite; /* slower spin */
+    border-radius: 50%;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
   
   /* Responsive Design */
   @media (max-width: 1023px) {

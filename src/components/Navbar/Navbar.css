@@ -20,13 +20,14 @@ a {
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.75rem;
-  color: #023CB6;
+  color: #E22FE4;
   text-transform: uppercase;
 }
 
 .contact {
   display: flex;
   gap: 15px;
+  color: #A9B1D6;
 }
 
 .contact .linkedin,
@@ -37,11 +38,11 @@ a {
 }
 
 .contact .linkedin:hover {
-  color: #0077b5; /* LinkedIn Blue */
+  color: #f8fbfd; /* LinkedIn Blue */
 }
 
 .contact .github:hover {
-  color: #171515; /* GitHub Black */
+  color: #f8fbfd; /* GitHub Black */
 }
 
 /* Responsive Design */
