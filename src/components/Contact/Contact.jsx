@@ -34,7 +34,7 @@ function Contact() {
       </div>
 
       <footer className="footer">
-        © 2025, Abdur Rahman
+        © 2025, Md. Sahin Alam
       </footer>
     </div>
   );
