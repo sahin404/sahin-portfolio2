@@ -2,58 +2,37 @@ import React from "react";
 import "./Works.css";
 // import { FaFlutter, FaJs } from "react-icons/fa";
 import { FaFlutter, FaJs } from "react-icons/fa6";
-import cf from '../../assets/codeforces.png'
-import chef from '../../assets/Codechef.png'
-import todo from '../../assets/todo list.png'
-import shop from '../../assets/shopping-cart.png'
+import edge from '../../assets/logo.jpg'
+import tetris from '../../assets/tetris.png'
+import cart from '../../assets/cart.png'
 import { SiDart } from "react-icons/si";
 import { HiOutlineDocumentText } from "react-icons/hi";
 
-const programing = [
+const experience = [
     {
         id: 1,
-        title: "Codeforces",
-        description: "Pupil max rating 1320",
-        url: "https://codeforces.com/profile/Abdur_Rahman040", // Add link here
+        title: "Lab Instructor",
+        description: "EDGE-GSTUCSE Digital Skills Training",
         icon: (
-            <img src={cf}
-                alt="Codeforces Logo"
+            <img src={edge}
+                alt="EDGE logo"
                 width="30"
                 height="30"
             />
         ),
-        technologies: [
-            { name: "C++" },
-            { name: "DSA" },
-        ],
-    },
-    {
-        id: 2,
-        title: "Code Chef",
-        description: "3-star coder max rating 1662",
-        url: "https://www.codechef.com/users/abdurrahman_40", // Add link here
-        icon: (
-            <img src={chef}
-                alt="CodeChef Logo"
-                width="30"
-                height="30"
-            />
-        ),
-        technologies: [
-            { name: "C++" },
-            { name: "DSA" }
-        ],
-    },
+        timeFrame: "March 2024 - Feb 2025"
+
+    }
 ];
 
 const projects = [
     {
         id: 1,
-        title: "E-commerce",
+        title: "DeliBazar E-commerce Website",
         description: "A fast and user-friendly E-commerce platform built with the MERN stack.",
-        url: "https://drive.google.com/file/d/1xr6yBmCvI34wBtKS9ju42BlZKwT2WWbp/view?usp=sharing", // Add link here
+        url: "https://delibazar.onrender.com/", // Add link here
         icon: (
-            <img src={shop}
+            <img src={cart}
                 alt="Shopping Cart"
                 width="30"
                 height="30"
@@ -68,23 +47,22 @@ const projects = [
     },
     {
         id: 2,
-        title: "TodoList App",
-        description: "A simple and efficient MERN-based To-Do List app to organize your tasks effortlessly.",
-        url: "https://todo-app-frontend-5o64.onrender.com/", // Add link here
+        title: "Tetris Game",
+        description: "A simple Tetris game in Python using Pygame with smooth controls, collision detection",
+        url: "https://github.com/sahin404/Python-Tetris-Game", // Add link here
         icon: (
-            <img src={todo}
-                alt="Todo List"
+            <img className="" src={tetris}
+                alt="tetris game"
                 width="30"
                 height="30"
             />
         ),
         technologies: [
-            { name: "MongoDB" },
-            { name: "Express" },
-            { name: "React" },
-            { name: "NodeJs" },
+            { name: "Python" },
+            { name: "Pygame" },
         ]
     },
+    
 ];
 
 function ProjectCard() {
@@ -92,32 +70,24 @@ function ProjectCard() {
         <>
             <div className="works">Works</div>
             <div className="main-container">
-                <div className="cp-container">
-                    <h2 className="title">Competitive Programming</h2>
-                    {programing.map((project) => (
-                        <a href={project.url} >
-                            <div key={project.id} className="project-card">
-                                <div className="icon">{project.icon}</div>
-                                <div className="content">
-                                    <h3 className="project-title">
-                                        {project.title}
-                                    </h3>
-                                    <p className="description">{project.description}</p>
-                                    <div className="tags">
-                                        {project.technologies.map((tech, index) => (
-                                            <span key={index} className="tech-tag">
-                                                {tech.icon} {tech.name}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
+                <div className="experience-container">
+                    <h2 className="title">Soft Experience</h2>
+                    {experience.map((project) => (
+                        <div key={project.id} className="project-card">
+                            <div className="icon">{project.icon}</div>
+                            <div className="content">
+                                <h3 className="project-title">
+                                    {project.title}
+                                </h3>
+                                <p className="description">{project.description}</p>
+                                <h3 className="description">{project.timeFrame}</h3>
                             </div>
-                        </a>
+                        </div>
                     ))}
                 </div>
 
                 <div className="project-container">
-                    <h2 className="title">Learning Projects</h2>
+                    <h2 className="title">Projects</h2>
                     {projects.map((project) => (
                         <a href={project.url} target="_blank" rel="noopener noreferrer">
                             <div key={project.id} className="project-card">

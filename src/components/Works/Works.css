@@ -2,18 +2,18 @@
 
 .works {
     font-family: "Inclusive Sans", sans-serif;
-    color: #333;
+    color: #A9B1D6;
     margin-bottom: 15px;
     font-size: 1.875rem;
     font-weight: 500; 
-    color: #222;
+    color: #A9B1D6;
 
 }
 .main-container {
   display: flex;
   gap: 15px;
 }
-.cp-container {
+.experience-container {
   min-width: 35%;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   font-family: "Inclusive Sans", sans-serif;
   /* max-width: 600px; */
   /* margin: auto; */
-  background: #ffffff;
+  background: #212436;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); /* Default shadow */
@@ -34,7 +34,7 @@
   flex-direction: column;
   gap: 20px;
   /* margin: auto; */
-  background: #ffffff;
+  background: #212436;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); /* Default shadow */
@@ -45,7 +45,7 @@
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 500;
-  color: #333;
+  color: #A9B1D6;
   /* margin-bottom: 4px; */
 }
 
@@ -61,17 +61,18 @@
 }
 
 .project-card:hover {
-  background: #f8f9fa;
+  background: #313651;
   /* padding: 10px; */
 }
 
 .icon {
   font-size: 1.8rem;
   /* background: #f1f3f5; */
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
-  margin-right: 15px;
-  color: #555;
+  margin-right: 5px;
+  color: #A9B1D6;
+  background-color: #555675;
 }
 
 .content {
@@ -81,13 +82,14 @@
 .project-title {
   font-size: 1rem;
   font-weight: 500;
-  color: #333;
+  color: #A9B1D6;
 }
 
 .description {
+  color: #A9B1D6;
   font-size: 0.9rem;
 
-  color: #666;
+  color: #A9B1D6;
   margin: 5px 0;
 }
 
@@ -102,12 +104,12 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  background: #eaf2ff;
+  background: #393F5E;
   padding: 5px 10px;
   border-radius: 6px;
   font-size: 0.8rem;
   font-weight: 500;
-  color: #333;
+  color: #A9B1D6;
 }
 
 @media (max-width: 1023px){
