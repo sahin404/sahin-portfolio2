@@ -20,7 +20,7 @@ const experience = [
                 height="30"
             />
         ),
-        timeFrame: "March 2024 - Feb 2025"
+        timeFrame: "Feb 2024 - Jan 2025"
 
     }
 ];
