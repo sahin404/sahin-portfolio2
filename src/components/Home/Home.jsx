@@ -6,7 +6,7 @@ function Home() {
     <div className='Home'>
       <div className="details">
         <div className="full-name">Md Sahin Alam</div>
-        <div className="my-title">MERN Stack Developer</div>
+        <div className="my-title">Full Stack Developer</div>
         <div className="article">I design and develop scalable and high-performance digital solutions to meet the needs of modern businesses.</div>
         <button className="glow-button mt-6">
           <a href={CV} target="_blank" className="preview-link">
