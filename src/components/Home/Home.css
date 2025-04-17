@@ -20,7 +20,7 @@
   .my-title {
     font-size: 1.875rem;
     line-height: 2.25rem;
-    color: #E22FE4;
+    color: #5EEAD4;
     margin: 10px 0;
   }
   
@@ -44,7 +44,7 @@
   }
   .glow-button {
     position: relative;
-    background-color: #E22FCE;
+    background-color: #38BDF8;
     color: white;
     padding: 12px 28px;
     font-size: 16px;
@@ -54,27 +54,14 @@
     cursor: pointer;
     overflow: hidden;
     z-index: 1;
-    box-shadow: 0 0 6px #E22FCE, 0 0 12px #E22FCE;
+    box-shadow: none; /* No glow by default */
     transition: all 0.3s ease;
   }
   
   .glow-button:hover {
-    box-shadow: 0 0 10px #E22FCE, 0 0 20px #E22FCE, 0 0 30px #E22FCE;
+    box-shadow: 0 0 8px #5EEAD4, 0 0 16px #5EEAD4, 0 0 24px #38BDF8;
   }
   
-  .sparkle-circle {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, #E22FCE 0%, transparent 75%);
-    opacity: 0.2; /* reduced sparkle visibility */
-    z-index: -1;
-    animation: spin 6s linear infinite; /* slower spin */
-    border-radius: 50%;
-  }
   
   @keyframes spin {
     0% {
