@@ -3,6 +3,8 @@ import './Home.css'
 import CV from '../../assets/CV.pdf'
 function Home() {
   return (
+    // Personal information
+  
     <div className='Home'>
       <div className="details">
         <div className="full-name">Md Sahin Alam</div>
