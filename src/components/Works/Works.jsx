@@ -11,7 +11,7 @@ import { HiOutlineDocumentText } from "react-icons/hi";
 const experience = [
     {
         id: 1,
-        title: "Lab Instructor",
+        title: "Technical Assistant",
         description: "EDGE-GSTUCSE Digital Skills Training",
         icon: (
             <img src={edge}
