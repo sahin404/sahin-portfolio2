@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Skills.css";
-import { FaFlutter, FaJs } from "react-icons/fa6";
-import { SiFlutter } from "react-icons/si";
 
 const skillsData = {
   FrontEnd: [
@@ -10,24 +8,24 @@ const skillsData = {
       icon: (
         <img
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-
-          alt="JavaScript Logo"
+          alt="HTML Logo"
           width="50"
           height="50"
         />
       ),
-
+      name: "HTML",
     },
     {
       id: 2,
       icon: (
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-          alt="JavaScript Logo"
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+          alt="CSS Logo"
           width="50"
           height="50"
         />
       ),
-
+      name: "CSS",
     },
     {
       id: 3,
@@ -39,138 +37,182 @@ const skillsData = {
           height="50"
         />
       ),
-
+      name: "JavaScript",
     },
     {
       id: 4,
       icon: (
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-          alt="JavaScript Logo"
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+          alt="TypeScript Logo"
           width="50"
           height="50"
         />
       ),
-
+      name: "TypeScript",
     },
     {
       id: 5,
       icon: (
-
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-          alt="JavaScript Logo"
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+          alt="Tailwind Logo"
           width="50"
           height="50"
         />
       ),
-
+      name: "Tailwind CSS",
+    },
+    {
+      id: 6,
+      icon: (
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+          alt="React Logo"
+          width="50"
+          height="50"
+        />
+      ),
+      name: "React",
+    },
+    {
+      id: 7,
+      icon: (
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+          alt="Next.js Logo"
+          width="50"
+          height="50"
+        />
+      ),
+      name: "Next.js",
     },
   ],
   Backend: [
     {
       id: 1,
       icon: (
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
           alt="Node.js Logo"
           width="50"
           height="50"
         />
-
       ),
-
+      name: "Node.js",
     },
-
     {
       id: 2,
       icon: (
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
-          alt="JavaScript Logo"
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
+          alt="Express Logo"
           width="50"
           height="50"
         />
-
       ),
-
+      name: "Express.js",
     },
-
-
+    {
+      id: 3,
+      icon: (
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg"
+          alt="Prisma Logo"
+          width="50"
+          height="50"
+        />
+      ),
+      name: "Prisma",
+    },
+    {
+      id: 4,
+      icon: (
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png"
+          alt="Zustand Logo"
+          width="50"
+          height="50"
+        />
+      ),
+      name: "Zustand",
+    },
   ],
   Database: [
     {
       id: 1,
       icon: (
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-          alt="JavaScript Logo"
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+          alt="MongoDB Logo"
           width="50"
           height="50"
         />
       ),
-
+      name: "MongoDB",
     },
     {
       id: 2,
       icon: (
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg"
-          alt="JavaScript Logo"
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg"
+          alt="MySQL Logo"
           width="50"
           height="50"
         />
-      )
+      ),
+      name: "MySQL",
     },
     {
       id: 3,
       icon: (
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
           alt="PostgreSQL Logo"
           width="50"
           height="50"
         />
-
-      )
-    }
+      ),
+      name: "PostgreSQL",
+    },
   ],
   Others: [
-
     {
       id: 1,
       icon: (
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
-          alt="JavaScript Logo"
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+          alt="C++ Logo"
           width="50"
           height="50"
         />
       ),
-
+      name: "C++",
     },
     {
       id: 2,
       icon: (
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-          alt="JavaScript Logo"
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+          alt="GitHub Logo"
           width="50"
           height="50"
         />
-      )
+      ),
+      name: "GitHub",
     },
     {
       id: 3,
       icon: (
-
-        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920256.png"
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2920/2920256.png"
           alt="Camera Logo"
           width="50"
           height="50"
         />
-      )
-    }
+      ),
+      name: "Photography",
+    },
   ],
 };
 
@@ -197,27 +239,13 @@ function Skills() {
         {skillsData[selectedCategory].length > 0 ? (
           skillsData[selectedCategory].map((skill) => (
             <div key={skill.id} className="skill-card">
-              {/* <div className="skill-icon">{skill.icon}</div> */}
               {skill.icon}
-              {/* <h3 className="skill-name">{skill.name}</h3>
-              <p className="skill-description">
-                {skill.description.split(" ").map((word, index) =>
-                  ["cross-platform", "no-code", "efficient"].includes(word) ? (
-                    <span key={index} className="highlight">
-                      {" " + word}
-                    </span>
-                  ) : (
-                    " " + word
-                  )
-                )}
-              </p> */}
+              <p className="skill-name">{skill.name}</p>
             </div>
           ))
         ) : (
           <p className="no-skills">No skills available in this category.</p>
         )}
-
-
       </div>
     </div>
   );

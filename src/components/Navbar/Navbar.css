@@ -1,62 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
 a {
-  text-decoration: none;  /* Removes underline */
-  color: inherit;         /* Inherit the color from the parent (so it won't be blue) */
+  text-decoration: none;
+  color: inherit;
 }
 
 .Navbar {
-  /* margin-top: 20px; */
-  padding-top: 20px;
+  position: fixed;
+  top: 20px; /* makes it slightly below top */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1100px;
   font-family: 'Inclusive Sans', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 15px 40px;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  padding: 14px 28px;
+
+  background: rgba(42, 45, 58, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  border: 1px solid rgba(94, 234, 212, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+  z-index: 999;
+}
+
+/* Remove body padding-top if Navbar is not covering content */
+body {
+  padding-top: 0; 
 }
 
 .name {
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  line-height: 1.75rem;
   color: #5EEAD4;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .contact {
   display: flex;
-  gap: 15px;
+  gap: 18px;
   color: #A9B1D6;
 }
 
-.contact .linkedin,
-.contact .github {
-  font-size: 1.125rem;
-  transition: color 0.3s ease-in-out;
-  cursor: pointer;
+.contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
 }
 
-.contact .linkedin:hover {
-  color: #f8fbfd; /* LinkedIn Blue */
+.contact a:hover {
+  background: rgba(94, 234, 212, 0.1);
+  transform: translateY(-3px);
 }
 
-.contact .github:hover {
-  color: #f8fbfd; /* GitHub Black */
+.contact svg {
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover colors for each platform */
+.contact .linkedin:hover svg {
+  color: #0A66C2;
+}
+
+.contact .github:hover svg {
+  color: #f5f5f5;
+}
+
+.contact .facebook:hover svg {
+  color: #1877F2;
+}
+
+.contact .twitter:hover svg {
+  color: #1DA1F2;
 }
 
 /* Responsive Design */
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   .Navbar {
-    padding: 15px 0px;
+    padding: 12px 18px;
+    width: 95%;
   }
 
   .name {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
-  .contact .linkedin,
-  .contact .github {
-    font-size: 1.2rem;
+  .contact {
+    gap: 12px;
   }
+
+  .contact a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact svg {
+    font-size: 1rem;
+  }
+}
+
+/* Optional: Add some padding-top for body/content to not hide behind Navbar */
+body {
+  padding-top: 80px;  /* height of navbar + some space */
 }

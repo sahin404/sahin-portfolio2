@@ -3,6 +3,17 @@
   margin: 0px auto;
   padding: 0 10px;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  padding-top: 80px; /* Navbar height + spacing */
+  background-color: #25293C; /* তোমার পছন্দমত color */
+  /* বা gradient দিতে চাইলে */
+  /* background: linear-gradient(135deg, #e0eafc, #cfdef3); */
+  color: #222;
+  font-family: 'Inclusive Sans', sans-serif;
+  min-height: 100vh;
+}
 
 @media (max-width: 1050px) {
   .content {
