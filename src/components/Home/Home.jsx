@@ -5,19 +5,14 @@ function Home() {
   return (
     // Personal information
   
-    <div className='Home'>
-      <div className="details">
+    <div className=' grid grid-cols-3 gap-5 items-center my-16'>
+      <div className="col-span-2">
         <div className="full-name">Md Sahin Alam</div>
         <div className="my-title">Full Stack Developer</div>
-        <div className="article">I design and develop scalable and high-performance digital solutions to meet the needs of modern businesses.</div>
-        <button className="glow-button mt-6">
-          <a href={CV} target="_blank" className="preview-link">
-            Download CV
-            <span className="sparkle-circle"></span>
-          </a>
-        </button>
+        <div className="article">A Full Stack Developer and problem solver with over 900 challanges solved across various online judges. I build full stack web applications using React, Next.js, and Node.js, focusing on writing efficient and maintainable code. I’m passionate about creating clean, scalable solutions and continuously learning new technologies to tackle real-world problems.</div>
+        
       </div>
-      <div className="codingimage">
+      <div className="col-span-1">
         <img src={codingImage} alt="Coding" />
       </div>
 
